@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>.::App101::.</title>
+</head>
+
+<body>
+
+<button id="buttonTap">Tap Me!</button>
+<button id="clear">Clear Out</button>
+<div id="results"></div>
+
+
+<script src="js/zepto.min.js"></script>
+<script src="js/buttonTap.js"></script>
+
+<script>
+$('#buttonTap').click(function() {
+	BUTTON.TapME($('#results'));	
+});
+
+$('#clear').click(function() {
+	$('#results').html('');
+});
+</script>
+
+</body>
+</html>
